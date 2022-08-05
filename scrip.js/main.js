@@ -6,19 +6,20 @@ class Item {
 }
 
 const Items = [];
+let tt = 0;
 
-var handleAddItem = (price, name) => {
+const handleAddItem = (price, name) => {
   Items.push(new Item(price, name));
 };
 
-var tt;
 
-var handleTotlePrices = () => {
+const handleTotlePrices = () => {
   Items.forEach((Item) => {
     tt += Item.price;
   });
+  console.log(tt);
 };
 
-var handleRenderItemToCart = () => {
+const handleRenderItemToCart = () => {
     
 };
